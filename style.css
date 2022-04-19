@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}.message{
+    font-size: 50px;
+    color: aliceblue;
+    background-color: rgb(212, 14, 90);
+    padding: 5px 5px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+table{
+    border-width: 10px; 
+    border-color: rgb(216, 137, 17); 
+    border-radius: 10px;
+    border-style:groove;
+    margin-top: 5vh;
+    margin-bottom: 10px;
+}
+button{
+    padding: 65px 65px;
+    box-shadow: 0 5px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+}.body::before{
+    content: " ";
+    position: absolute;
+    background-image:linear-gradient(rgba(9, 97, 230, 0.3),rgba(37, 240, 179, 0.3)),url("./cover.jpg");
+    height: 100%;
+    clip-path: polygon(0 0,100% 0, 100% 70%,50% 100%,0% 70%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    right: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
