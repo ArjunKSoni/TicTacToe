@@ -32,6 +32,7 @@ s7.addEventListener('click',changeColor7);
 s8.addEventListener('click',changeColor8);
 s9.addEventListener('click',changeColor9);
 reset.addEventListener('click',()=>{
+    msg.innerHTML="Tic Tac Toe"
     if(s1.classList.contains('red'))s1.classList.remove('red')
     if(s1.classList.contains('green'))s1.classList.remove('green')
     if(s2.classList.contains('red'))s2.classList.remove('red')
@@ -68,12 +69,13 @@ reset.addEventListener('click',()=>{
     o.a7='white'
     o.a8='white'
     o.a9='white'
+    
 })
 
 function changeColor1(){
 if(count%2==0){
     if(s1.classList.contains('red')||s1.classList.contains('green')){
-        msg.innerHTML="Invalid move!!!!!. Try again..."
+        msg.innerHTML="Invalid move!!"
     }
     else{
         s1.classList.add('red')
@@ -85,7 +87,7 @@ if(count%2==0){
 }
 else{
     if(s1.classList.contains('red')||s1.classList.contains('green')){
-        msg.innerHTML="Invalid move!!!!!. Try again..."
+        msg.innerHTML="Invalid move!!"
     }
     else{
         s1.classList.add('green')
@@ -99,7 +101,7 @@ else{
 function changeColor2(){
     if(count%2==0){
         if(s2.classList.contains('red')||s2.classList.contains('green')){
-            msg.innerHTML="Invalid move!!!!!. Try again..."
+            msg.innerHTML="Invalid move!!"
         }
         else{
             o.a2="red";
@@ -111,7 +113,7 @@ function changeColor2(){
     }
     else{
         if(s2.classList.contains('red')||s2.classList.contains('green')){
-            msg.innerHTML="Invalid move!!!!!. Try again..."
+            msg.innerHTML="Invalid move!!"
         }
         else{
             o.a2="green";
@@ -124,7 +126,7 @@ function changeColor2(){
     }function changeColor3(){
         if(count%2==0){
             if(s3.classList.contains('red')||s3.classList.contains('green')){
-                msg.innerHTML="Invalid move!!!!!. Try again..."
+                msg.innerHTML="Invalid move!!"
             }
             else{
                 o.a3="red";
@@ -136,7 +138,7 @@ function changeColor2(){
         }
         else{
             if(s3.classList.contains('red')||s3.classList.contains('green')){
-                msg.innerHTML="Invalid move!!!!!. Try again..."
+                msg.innerHTML="Invalid move!!"
             }
             else{
                 o.a3="green";
@@ -149,7 +151,7 @@ function changeColor2(){
         }function changeColor4(){
             if(count%2==0){
                 if(s4.classList.contains('red')||s4.classList.contains('green')){
-                    msg.innerHTML="Invalid move!!!!!. Try again..."
+                    msg.innerHTML="Invalid move!!"
                 }
                 else{
                     o.a4="red";
@@ -161,7 +163,7 @@ function changeColor2(){
             }
             else{
                 if(s4.classList.contains('red')||s4.classList.contains('green')){
-                    msg.innerHTML="Invalid move!!!!!. Try again..."
+                    msg.innerHTML="Invalid move!!"
                 }
                 else{
                     s4.classList.add('green')
@@ -175,7 +177,7 @@ function changeColor2(){
             function changeColor5(){
                 if(count%2==0){
                     if(s5.classList.contains('red')||s5.classList.contains('green')){
-                        msg.innerHTML="Invalid move!!!!!. Try again..."
+                        msg.innerHTML="Invalid move!!"
                     }
                     else{
                         o.a5="red";
@@ -187,7 +189,7 @@ function changeColor2(){
                 }
                 else{
                     if(s5.classList.contains('red')||s5.classList.contains('green')){
-                        msg.innerHTML="Invalid move!!!!!. Try again..."
+                        msg.innerHTML="Invalid move!!"
                     }
                     else{
                         o.a5="green";
@@ -201,7 +203,7 @@ function changeColor2(){
                 function changeColor6(){
                     if(count%2==0){
                         if(s6.classList.contains('red')||s6.classList.contains('green')){
-                            msg.innerHTML="Invalid move!!!!!. Try again..."
+                            msg.innerHTML="Invalid move!!"
                         }
                         else{
                             o.a6="red";
@@ -213,7 +215,7 @@ function changeColor2(){
                     }
                     else{
                         if(s6.classList.contains('red')||s6.classList.contains('green')){
-                            msg.innerHTML="Invalid move!!!!!. Try again..."
+                            msg.innerHTML="Invalid move!!"
                         }
                         else{
                             o.a6="green";
@@ -226,7 +228,7 @@ function changeColor2(){
                     }function changeColor7(){
                         if(count%2==0){
                             if(s7.classList.contains('red')||s7.classList.contains('green')){
-                                msg.innerHTML="Invalid move!!!!!. Try again..."
+                                msg.innerHTML="Invalid move!!"
                             }
                             else{
                                 o.a7="red";
@@ -238,7 +240,7 @@ function changeColor2(){
                         }
                         else{
                             if(s7.classList.contains('red')||s7.classList.contains('green')){
-                                msg.innerHTML="Invalid move!!!!!. Try again..."
+                                msg.innerHTML="Invalid move!!"
                             }
                             else{
                                 o.a7="green";
@@ -252,7 +254,7 @@ function changeColor2(){
                         function changeColor8(){
                             if(count%2==0){
                                 if(s8.classList.contains('red')||s8.classList.contains('green')){
-                                    msg.innerHTML="Invalid move!!!!!. Try again..."
+                                    msg.innerHTML="Invalid move!!"
                                 }
                                 else{
                                     o.a8="red";
@@ -264,7 +266,7 @@ function changeColor2(){
                             }
                             else{
                                 if(s8.classList.contains('red')||s8.classList.contains('green')){
-                                    msg.innerHTML="Invalid move!!!!!. Try again..."
+                                    msg.innerHTML="Invalid move!!"
                                 }
                                 else{
                                     o.a8="green";
@@ -278,7 +280,7 @@ function changeColor2(){
                             function changeColor9(){
                                 if(count%2==0){
                                     if(s9.classList.contains('red')||s9.classList.contains('green')){
-                                        msg.innerHTML="Invalid move!!!!!. Try again..."
+                                        msg.innerHTML="Invalid move!!"
                                     }
                                     else{
                                         o.a9="red";
@@ -290,7 +292,7 @@ function changeColor2(){
                                 }
                                 else{
                                     if(s9.classList.contains('red')||s9.classList.contains('green')){
-                                        msg.innerHTML="Invalid move!!!!!. Try again..."
+                                        msg.innerHTML="Invalid move!!"
                                     }
                                     else{
                                         o.a9="green";
@@ -303,12 +305,14 @@ function changeColor2(){
                                 }
 function winner(){
 if(o.a1=="red"&&o.a5=="red"&&o.a9=="red"||o.a3=="red"&&o.a5=="red"&&o.a7=="red"||o.a1=="red"&&o.a2=="red"&&o.a3=="red"||o.a4=="red"&&o.a5=="red"&&o.a6=="red"||o.a7=="red"&&o.a8=="red"&&o.a9=="red"||o.a1=="red"&&o.a4=="red"&&o.a7=="red"||o.a2=="red"&&o.a5=="red"&&o.a8=="red"||o.a3=="red"&&o.a6=="red"&&o.a9=="red"){
-    msg.innerHTML='RED team wins!!! woow....'
+    msg.innerHTML='RED team wins!!!'
     disable();
+    tie()
 }
 if(o.a1=="green"&&o.a5=="green"&&o.a9=="green"||o.a3=="green"&&o.a5=="green"&&o.a7=="green"||o.a1=="green"&&o.a2=="green"&&o.a3=="green"||o.a4=="green"&&o.a5=="green"&&o.a6=="green"||o.a7=="green"&&o.a8=="green"&&o.a9=="green"||o.a1=="green"&&o.a4=="green"&&o.a7=="green"||o.a2=="green"&&o.a5=="green"&&o.a8=="green"||o.a3=="green"&&o.a6=="green"&&o.a9=="green"){
-    msg.innerHTML='GREEN team wins!!! woow....'
+    msg.innerHTML='GREEN team wins!!!'
     disable();
+    tie()
 }
 }
 function disable(){
@@ -321,4 +325,9 @@ function disable(){
     s7.setAttribute('disabled','true');
     s8.setAttribute('disabled','true');
     s9.setAttribute('disabled','true');
+}
+function tie(){
+    if(o.a1!='white'&&o.a2!='white'&&o.a3!='white'&&o.a4!='white'&&o.a5!='white'&&o.a6!='white'&&o.a7!='white'&&o.a8!='white'&&o.a9!='white'){
+        msg.innerHTML="Game TIE!!!!."
+    }
 }
