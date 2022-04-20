@@ -50,6 +50,24 @@ reset.addEventListener('click',()=>{
     if(s8.classList.contains('green'))s8.classList.remove('green')
     if(s9.classList.contains('red'))s9.classList.remove('red')
     if(s9.classList.contains('green'))s9.classList.remove('green')
+    s1.removeAttribute('disabled','true');
+    s2.removeAttribute('disabled','true');
+    s3.removeAttribute('disabled','true');
+    s4.removeAttribute('disabled','true');
+    s5.removeAttribute('disabled','true');
+    s6.removeAttribute('disabled','true');
+    s7.removeAttribute('disabled','true');
+    s8.removeAttribute('disabled','true');
+    s9.removeAttribute('disabled','true');
+    o.a1='white'
+    o.a2='white'
+    o.a3='white'
+    o.a4='white'
+    o.a5='white'
+    o.a6='white'
+    o.a7='white'
+    o.a8='white'
+    o.a9='white'
 })
 
 function changeColor1(){
@@ -60,9 +78,9 @@ if(count%2==0){
     else{
         s1.classList.add('red')
         o.a1="red";
-        console.log(o.a1)
         msg.innerHTML="Tic Tac Toe"
         count+=1;
+        winner()
     }
 }
 else{
@@ -74,6 +92,7 @@ else{
         o.a1="green";
         msg.innerHTML="Tic Tac Toe"
         count+=1;
+        winner()
     }
 }
 }
@@ -87,6 +106,7 @@ function changeColor2(){
             s2.classList.add('red')
             msg.innerHTML="Tic Tac Toe"
             count+=1;
+            winner()
         }
     }
     else{
@@ -98,6 +118,7 @@ function changeColor2(){
             s2.classList.add('green')
             msg.innerHTML="Tic Tac Toe"
             count+=1;
+            winner()
         }
     }
     }function changeColor3(){
@@ -110,6 +131,7 @@ function changeColor2(){
                 s3.classList.add('red')
                 msg.innerHTML="Tic Tac Toe"
                 count+=1;
+                winner()
             }
         }
         else{
@@ -121,6 +143,7 @@ function changeColor2(){
                 s3.classList.add('green')
                 msg.innerHTML="Tic Tac Toe"
                 count+=1;
+                winner()
             }
         }
         }function changeColor4(){
@@ -133,6 +156,7 @@ function changeColor2(){
                     s4.classList.add('red')
                     msg.innerHTML="Tic Tac Toe"
                     count+=1;
+                    winner()
                 }
             }
             else{
@@ -144,6 +168,7 @@ function changeColor2(){
                     o.a4="green";
                     msg.innerHTML="Tic Tac Toe"
                     count+=1;
+                    winner()
                 }
             }
             }
@@ -157,6 +182,7 @@ function changeColor2(){
                         s5.classList.add('red')
                         msg.innerHTML="Tic Tac Toe"
                         count+=1;
+                        winner()
                     }
                 }
                 else{
@@ -168,6 +194,7 @@ function changeColor2(){
                         s5.classList.add('green')
                         msg.innerHTML="Tic Tac Toe"
                         count+=1;
+                        winner()
                     }
                 }
                 }
@@ -181,6 +208,7 @@ function changeColor2(){
                             s6.classList.add('red')
                             msg.innerHTML="Tic Tac Toe"
                             count+=1;
+                            winner()
                         }
                     }
                     else{
@@ -192,6 +220,7 @@ function changeColor2(){
                             s6.classList.add('green')
                             msg.innerHTML="Tic Tac Toe"
                             count+=1;
+                            winner()
                         }
                     }
                     }function changeColor7(){
@@ -204,6 +233,7 @@ function changeColor2(){
                                 s7.classList.add('red')
                                 msg.innerHTML="Tic Tac Toe"
                                 count+=1;
+                                winner()
                             }
                         }
                         else{
@@ -215,6 +245,7 @@ function changeColor2(){
                                 s7.classList.add('green')
                                 msg.innerHTML="Tic Tac Toe"
                                 count+=1;
+                                winner()
                             }
                         }
                         }
@@ -228,6 +259,7 @@ function changeColor2(){
                                     s8.classList.add('red')
                                     msg.innerHTML="Tic Tac Toe"
                                     count+=1;
+                                    winner()
                                 }
                             }
                             else{
@@ -239,6 +271,7 @@ function changeColor2(){
                                     s8.classList.add('green')
                                     msg.innerHTML="Tic Tac Toe"
                                     count+=1;
+                                    winner()
                                 }
                             }
                             }
@@ -252,6 +285,7 @@ function changeColor2(){
                                         s9.classList.add('red')
                                         msg.innerHTML="Tic Tac Toe"
                                         count+=1;
+                                        winner()
                                     }
                                 }
                                 else{
@@ -263,31 +297,28 @@ function changeColor2(){
                                         s9.classList.add('green')
                                         msg.innerHTML="Tic Tac Toe"
                                         count+=1;
+                                        winner();
                                     }
                                 }
                                 }
-if((s1.classList.contains('red')&&s5.classList.contains("red")&&s9.classList.contains('red'))||(s3.classList.contains('red')&&s5.classList.contains("red")&&s7.classList.contains('red'))||(s1.classList.contains('red')&&s2.classList.contains("red")&&s3.classList.contains('red'))||(s4.classList.contains('red')&&s5.classList.contains("red")&&s6.classList.contains('red'))||(s7.classList.contains('red')&&s8.classList.contains("red")&&s9.classList.contains('red'))||(s1.classList.contains('red')&&s4.classList.contains("red")&&s7.classList.contains('red'))||(s2.classList.contains('red')&&s5.classList.contains("red")&&s8.classList.contains('red'))||(s3.classList.contains('red')&&s6.classList.contains("red")&&s9.classList.contains('red'))){
-    msg.innerHTML('RED team wins!!! woow....')
-    console.log('red')
-    s1.classList.add('disable');
-    s2.classList.add('disable');
-    s3.classList.add('disable');
-    s4.classList.add('disable');
-    s5.classList.add('disable');
-    s6.classList.add('disable');
-    s7.classList.add('disable');
-    s8.classList.add('disable');
-    s9.classList.add('disable');
+function winner(){
+if(o.a1=="red"&&o.a5=="red"&&o.a9=="red"||o.a3=="red"&&o.a5=="red"&&o.a7=="red"||o.a1=="red"&&o.a2=="red"&&o.a3=="red"||o.a4=="red"&&o.a5=="red"&&o.a6=="red"||o.a7=="red"&&o.a8=="red"&&o.a9=="red"||o.a1=="red"&&o.a4=="red"&&o.a7=="red"||o.a2=="red"&&o.a5=="red"&&o.a8=="red"||o.a3=="red"&&o.a6=="red"&&o.a9=="red"){
+    msg.innerHTML='RED team wins!!! woow....'
+    disable();
 }
-if((s1.classList.contains('green')&&s5.classList.contains("green")&&s9.classList.contains('green'))||(s3.classList.contains('green')&&s5.classList.contains("green")&&s7.classList.contains('green'))||(s1.classList.contains('green')&&s2.classList.contains("green")&&s3.classList.contains('green'))||(s4.classList.contains('green')&&s5.classList.contains("green")&&s6.classList.contains('green'))||(s7.classList.contains('green')&&s8.classList.contains("green")&&s9.classList.contains('green'))||(s1.classList.contains('green')&&s4.classList.contains("green")&&s7.classList.contains('green'))||(s2.classList.contains('green')&&s5.classList.contains("green")&&s8.classList.contains('green'))||(s3.classList.contains('green')&&s6.classList.contains("green")&&s9.classList.contains('green'))){
-    msg.innerHTML('GREEN team wins!!! woow....')
-    s1.classList.add('disable');
-    s2.classList.add('disable');
-    s3.classList.add('disable');
-    s4.classList.add('disable');
-    s5.classList.add('disable');
-    s6.classList.add('disable');
-    s7.classList.add('disable');
-    s8.classList.add('disable');
-    s9.classList.add('disable');
+if(o.a1=="green"&&o.a5=="green"&&o.a9=="green"||o.a3=="green"&&o.a5=="green"&&o.a7=="green"||o.a1=="green"&&o.a2=="green"&&o.a3=="green"||o.a4=="green"&&o.a5=="green"&&o.a6=="green"||o.a7=="green"&&o.a8=="green"&&o.a9=="green"||o.a1=="green"&&o.a4=="green"&&o.a7=="green"||o.a2=="green"&&o.a5=="green"&&o.a8=="green"||o.a3=="green"&&o.a6=="green"&&o.a9=="green"){
+    msg.innerHTML='GREEN team wins!!! woow....'
+    disable();
+}
+}
+function disable(){
+    s1.setAttribute('disabled','true');
+    s2.setAttribute('disabled','true');
+    s3.setAttribute('disabled','true');
+    s4.setAttribute('disabled','true');
+    s5.setAttribute('disabled','true');
+    s6.setAttribute('disabled','true');
+    s7.setAttribute('disabled','true');
+    s8.setAttribute('disabled','true');
+    s9.setAttribute('disabled','true');
 }
