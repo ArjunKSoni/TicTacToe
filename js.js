@@ -330,4 +330,8 @@ function tie(){
     if(o.a1!='white'&&o.a2!='white'&&o.a3!='white'&&o.a4!='white'&&o.a5!='white'&&o.a6!='white'&&o.a7!='white'&&o.a8!='white'&&o.a9!='white'){
         msg.innerHTML="Game TIE!!!!."
     }
+    else if(count==8){
+        msg.innerHTML="Game TIE!!!!.";
+        disable();
+    }
 }
